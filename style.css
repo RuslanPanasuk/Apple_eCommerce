@@ -3,13 +3,19 @@ import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600
 
 /* Common styles__________________________________ */
 
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
   outline: none;
-  font-family: "Work Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a,
@@ -21,9 +27,18 @@ a:hover {
   text-decoration: none;
 }
 
+ul li {
+  list-style: none;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
 }
 
 :root {
@@ -147,4 +162,29 @@ html {
     30% 0
   );
 }
+
+.slideshow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slideshow div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+.slideshow div.change {
+  opacity: 1;
+}
+
   
