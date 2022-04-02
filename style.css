@@ -111,7 +111,8 @@ body {
   height: 55rem;
 
   transform-style: preserve-3d;
-  transform: rotateY(91deg);
+  transition: transform 0.5s;
+  transform: rotateX(0) rotateY(20deg) rotateZ(0);
 }
 
 .front-side,
