@@ -99,7 +99,6 @@ document.querySelector('.bottom-z-control').addEventListener('click', () => {
 // ------------------------------------------------------------
 
 const section3Content = document.querySelector('.section-3-content');
-console.log(section3Content);
 
 window.addEventListener('scroll', () => {
   if(window.pageYOffset + window.innerHeight >= section3Content.offsetTop + section3Content.offsetHeight / 2){
