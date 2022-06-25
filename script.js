@@ -94,3 +94,15 @@ document.querySelector('.top-z-control').addEventListener('click', () => {
 document.querySelector('.bottom-z-control').addEventListener('click', () => {
   cube.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z += 20}deg)`;
 });
+
+
+// ------------------------------------------------------------
+
+const section3Content = document.querySelector('.section-3-content');
+console.log(section3Content);
+
+window.addEventListener('scroll', () => {
+  if(window.pageYOffset + window.innerHeight >= section3Content.offsetTop + section3Content.offsetHeight / 2){
+    section3Content.classList.add('change');
+  }
+});
