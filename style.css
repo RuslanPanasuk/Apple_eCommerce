@@ -630,6 +630,10 @@ body {
   position: absolute;
 }
 
+.watch-bands {
+  transition: margin-right 1s;
+}
+
 .watch-band-img {
   width: 35rem;
   height: 35rem;
@@ -638,6 +642,7 @@ body {
 
 .watch-cases {
   flex-direction: column;
+  transition: margin-top 1s;
 }
 
 .watch-case-img {
@@ -652,6 +657,11 @@ body {
   height: 4rem;
   background-color: rgba(221, 221, 221, 0.4);
   border-radius: 5rem;
+}
+
+.hideControl {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .watch-control i {
