@@ -1,6 +1,6 @@
 // Prevent default for links
 
-document.querySelectorAll('.watch-control, .controls, a').forEach(control => {
+document.querySelectorAll('.watch-control, .controls a, .iphone-btn').forEach(control => {
   control.addEventListener('click', e => {
     e.preventDefault();
   });

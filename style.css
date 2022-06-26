@@ -766,3 +766,26 @@ body {
   background-color: var(--white-color);
   color: var(--primary-color);
 }
+
+/* Section-6  __________________________________ */
+
+.section-6 {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+.icon-link {
+  margin: 0 5rem;
+}
+
+.icon-link img {
+  width: 10rem;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
